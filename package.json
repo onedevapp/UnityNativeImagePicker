@@ -1,0 +1,9 @@
+{
+  "name": "com.onedevapp.nativeimagepicker",
+  "displayName": "Native Image Picker",
+  "version": "1.0.0",
+  "documentationUrl": "",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "description": "This plugin helps you pick an image from Gallery/Photos from your device. Note: currently supported platform is Android only"
+}
