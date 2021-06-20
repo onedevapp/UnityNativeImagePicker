@@ -1,5 +1,5 @@
 # UnityNativeImagePicker
-Unity plugin helps you pick an image fromCamera or Gallery/Photos from your device
+Unity plugin helps you pick an image from Camera or Gallery/Photos from your device
 <br><br>
 
 ### INSTALLATION
@@ -33,28 +33,37 @@ If your project doesn't have an AndroidManifest, you can copy Unity's default on
 Or select from plugins `\Assets\NativeImagePicker\Plugins\Android`
 <br><br>
 
-To get image from device via Camera or Gallery
+### How To
 
-```C#	
-  	//Call all default values
+-	Add uses-permission to AndroidManifest
+	```XML
+	<!-- Required for accessing storage -->
+  	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	```
+
+-	To get image from device via Camera or Gallery
+
+	```C#	
+	//Call all default values
 	//pickerType = ImagePickerType.CHOICE
 	//maxWidth = 612
 	//maxHeight = 816
 	//quality = 80
 	NativeImagePickerManager.Instance.GetImageFromDevice();
-```
-or 
-```C#	
-  	//Calling required types
+	```
+	or 
+	```C#	
+	//Calling required types
 	//CHOICE = 0, CAMERA = 1, GALLERY = 2
 	NativeImagePickerManager.Instance.GetImageFromDevice(ImagePickerType pickerType = ImagePickerType.CHOICE, int maxWidth = 612, int maxHeight = 816, int quality = 80);
-```
+	```
 -	Callbacks
-```C#
+	```C#
 	//Register for action	
 	NativeImagePickerManager.OnImagePicked += OnImagePicked;
 	NativeImagePickerManager.OnImagePickedError += OnImagePickedError;
-```
+	```
 
 
 #### Debug
