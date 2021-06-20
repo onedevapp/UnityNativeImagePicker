@@ -3,13 +3,16 @@ Unity plugin helps you pick an image fromCamera or Gallery/Photos from your devi
 <br><br><br>
 
 ## INSTALLATION
-There are 2 ways to install this plugin:
+There are 4 ways to install this plugin:
 
 1. import NativeImagePicker.unitypackage via Assets-Import Package
 2. clone/download this repository and move the Plugins folder to your Unity project's Assets folder
-3. (via Package Manager) add the following line to Packages/manifest.json:
+3. via Package Manager (add the following line to Packages/manifest.json):
 
     "com.onedevapp.nativeimagepicker": "https://github.com/onedevapp/UnityNativeImagePicker.git",
+4. via Package Manager (Add package from git url):
+
+    https://github.com/onedevapp/UnityNativeImagePicker.git
 
 
    
