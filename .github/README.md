@@ -1,22 +1,20 @@
 # UnityNativeImagePicker
 Unity plugin helps you pick an image fromCamera or Gallery/Photos from your device
-<br><br><br>
+<br><br>
 
-## INSTALLATION
+### INSTALLATION
 There are 4 ways to install this plugin:
 
 1. import NativeImagePicker.unitypackage via Assets-Import Package
 2. clone/download this repository and move the Plugins folder to your Unity project's Assets folder
-3. via Package Manager (add the following line to Packages/manifest.json):
+3. via Package Manager (**Add package from git url**):
 
-    "com.onedevapp.nativeimagepicker": "https://github.com/onedevapp/UnityNativeImagePicker.git",
-4. via Package Manager (Add package from git url):
-
-    https://github.com/onedevapp/UnityNativeImagePicker.git
-
+    - `https://github.com/onedevapp/UnityNativeImagePicker.git`
+4. via Package Manager (add the following line to **Packages/manifest.json**):
+    - `"com.onedevapp.nativeimagepicker": "https://github.com/onedevapp/UnityNativeImagePicker.git",`
 
    
-<br><br>
+<br>
 
 ### Requirements
 * You project should build against Android 5.0 (API level 21) SDK at least.
@@ -28,12 +26,12 @@ According to the Unity3D docs [here](https://docs.unity3d.com/Manual/PluginsForA
 AndroidManifest.xml file placed in the `Assets->Plugins->Android` folder (placing a custom manifest completely overrides the default Unity Android manifest). 
 
 Or select an existing manifest from `Project Settings->Publishing Settings->Build->Custom Main Manifest`
-<br><br><br>
+<br><br>
 
 If your project doesn't have an AndroidManifest, you can copy Unity's default one from `C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer\Apk`. 
 
 Or select from plugins `\Assets\NativeImagePicker\Plugins\Android`
-<br><br><br>
+<br><br>
 
 To get image from device via Camera or Gallery
 
@@ -59,13 +57,17 @@ or
 ```
 
 
-### Debug
+#### Debug
 -	Toggle library logs
 	```C#
 	//By default puglin console log will be diabled, but can be enabled
 	NativeImagePickerManager.Instance.PluginDebug(bool showLog);
 	```
-<br><br>
+<br>
+
+## Libraries
+- #### [UnityMainThreadDispatcher](https://github.com/PimDeWitte/UnityMainThreadDispatcher)
+<br>
 
 ## :open_hands: Contributions
 Any contributions are welcome!
