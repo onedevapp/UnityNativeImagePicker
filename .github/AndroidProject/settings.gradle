@@ -1,0 +1,2 @@
+include ':NativeImagePicker'
+rootProject.name = "NativeImagePicker_Plugin"
